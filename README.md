@@ -15,4 +15,4 @@ python run.py
 
 The ```arcade_basic.py``` window should look something like the window below.
 
-![Basic Arcade Window](docs/images/basic_arcade_window.png)
+![Basic Arcade Window](docs/images/screen_cap.png)
