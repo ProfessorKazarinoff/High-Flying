@@ -19,6 +19,7 @@ from settings import (
     BOMB_COUNT,
     SCORE_FONT_SIZE,
     SCORE_FONT_COLOR,
+    PLAYER_SPRITE_IMAGE,
 )
 
 # Custom Window Class
@@ -49,7 +50,7 @@ class SpaceGame(arcade.Window):
         self.coin_list = arcade.SpriteList()
         # Set up the player
         self.player_sprite = Player(
-            ":resources:images/space_shooter/playerShip1_orange.png",
+            PLAYER_SPRITE_IMAGE,
             SPRITE_SCALING_PLAYER,
         )
         self.player_sprite.center_x = 50

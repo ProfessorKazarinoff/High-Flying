@@ -34,3 +34,6 @@ BOMB_COUNT = 10
 # Score
 SCORE_FONT_SIZE = 14
 SCORE_FONT_COLOR = arcade.color.WHITE_SMOKE
+
+# Lucy x5
+PLAYER_SPRITE_IMAGE = ":resources:images/animated_characters/female_adventurer/femaleAdventurer_walk4.png"
