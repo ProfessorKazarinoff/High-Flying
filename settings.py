@@ -8,7 +8,7 @@ import arcade
 # Screen Properties
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Plane Flying Game with Arcade and Python"
+SCREEN_TITLE = "High Flying"
 
 # Scaling
 SCALING = 2.0
@@ -33,6 +33,8 @@ COIN_SPEED = 4
 # Bombs
 BOMB_COUNT = 10
 BOMB_SPRITE_IMAGE = ":resources:images/enemies/saw.png"
+#BOMB_SPRITE_IMAGE = "images/bombWhite.png"
+#BOMB_SPRITE_IMAGE = ":resources:images/enemies/bee.png"
 # ":resources:images/enemies/bee.png"
 # images/bomb.png
 BOMB_SPRITE_SCALING = 0.50
@@ -47,4 +49,4 @@ PLAYER_SPRITE_IMAGE = ":resources:images/animated_characters/female_adventurer/f
 SPRITE_SCALING_PLAYER = 0.5
 
 # Score and damage
-DAMAGE_START_POINTS = 3
+DAMAGE_START_POINTS = 0

@@ -115,8 +115,8 @@ class SpaceGame(arcade.Window):
             bombs_hit_list = arcade.check_for_collision_with_list(self.player_sprite, self.bomb_list)
             for bomb in bombs_hit_list:
                 bomb.remove_from_sprite_lists()
-                self.damage -=1
-                if self.damage < 1:
+                self.damage +=1
+                if self.damage > 3:
                     self.game_over = True
                     #self.show_view(game_over_view)
 
