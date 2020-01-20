@@ -3,11 +3,13 @@
 """Custom Sprite Class"""
 
 import arcade
-import settings
 
-SCREEN_WIDTH = settings.SCREEN_WIDTH
-SCREEN_HEIGHT = settings.SCREEN_HEIGHT
-
+from settings import (
+    SCREEN_WIDTH,
+    SCREEN_HEIGHT,
+    COIN_SPEED,
+    BOMB_SPEED
+)
 
 class Player(arcade.Sprite):
     """Player sprite can't move off screen"""
@@ -37,7 +39,7 @@ class LeftMovingCoin(Coin):
     """A coin that moves from the right of the screen to the left"""
 
     def update(self):
-        self.center_x -= 2
+        self.center_x -= COIN_SPEED
         if self.left < 0:
             self.left = SCREEN_WIDTH
 
@@ -45,4 +47,7 @@ class LeftMovingCoin(Coin):
 class Bomb(arcade.Sprite):
     """Bomb class"""
 
-    pass
+    def update(self):
+        self.center_x -= BOMB_SPEED
+        if self.left < 0:
+            self.left = SCREEN_WIDTH

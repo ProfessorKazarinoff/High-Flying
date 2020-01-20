@@ -13,6 +13,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
-The ```arcade_basic.py``` window should look something like the window below.
+The ```run.py``` window should look something like the window below.
 
 ![Basic Arcade Window](docs/images/screen_cap.png)

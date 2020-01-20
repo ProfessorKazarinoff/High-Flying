@@ -11,6 +11,7 @@ From the command line
 
 import arcade
 from window import SpaceGame
+from views import MenuView, GameOverView
 
 
 def main():
